@@ -1,0 +1,35 @@
+@import "../_variables.scss";
+
+.company-label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.company-input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.4rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $secondary-text-color;
+  background-color: transparent;
+  border: 1px solid $secondary-color;
+  appearance: none;
+  border-radius: 0;
+  transition: all .15s ease-in-out;
+
+  &.no-resize {
+    resize: none;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
+
+  &:disabled {
+    background-color: $secondary-color;
+    opacity: $disabled-opacity;
+  }
+}
