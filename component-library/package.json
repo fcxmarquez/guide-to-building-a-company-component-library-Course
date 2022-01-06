@@ -9,7 +9,8 @@
     "build-storybook": "build-storybook",
     "format": "prettier --write .",
     "lint:format": "prettier --check .",
-    "lint": "eslint src/**"
+    "lint": "eslint src/**",
+    "chromatic": "npx chromatic --project-token=1ce6b043b30a"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "@typescript-eslint/parser": "^5.9.0",
     "babel-loader": "^8.2.3",
     "bootstrap": "^5.1.3",
+    "chromatic": "^6.3.3",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.28.0",
