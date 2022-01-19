@@ -30,7 +30,7 @@ const colorStyles = (p: ButtonProps) => {
 
     &:focus-visible {
       border-color: ${color};
-      box-shadow: 0 0 0 0.2rem ${transparentize(0.45, backgroundColor)};
+      background: 0 0 0 0.2rem ${transparentize(0.45, backgroundColor)};
     }
   `;
 };
@@ -74,6 +74,8 @@ export const StyledButton = styled.button<ButtonProps>`
     cursor: inherit;
     opacity: ${DISABLED_OPACITY};
   }
+
+  /* Set a button click state */
 
   ${colorStyles}
 `;
