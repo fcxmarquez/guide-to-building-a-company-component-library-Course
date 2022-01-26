@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { Logo } from '../Logo/Logo';
+import { Logo } from '../logo/Logo';
 
 export default {
   title: 'Example/Logo',
