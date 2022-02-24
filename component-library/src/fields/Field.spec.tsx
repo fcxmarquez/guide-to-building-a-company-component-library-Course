@@ -20,13 +20,24 @@ describe('Field', () => {
     it('applies unique ID to id attribute', () => {
       render(
         <Field>
-          <Field.Input></Field.Input>
+          <Field.Label>Input</Field.Label>
+          <Field.Input />
         </Field>
       );
+      screen.debug()
+      expect(screen.getByLabelText("Input")).toHaveAttribute('id', 'unique-id');
     });
   });
 
   describe('TextArea', () => {
-    it('applies unique ID to id attribute', () => {});
+    it('applies unique ID to id attribute', () => {
+      render(
+        <Field>
+          <Field.Label>TextArea</Field.Label>
+          <Field.TextArea />
+        </Field>
+      );
+      expect(screen.getByLabelText("TextArea")).toHaveAttribute('id', 'unique-id');
+    });
   });
 });
