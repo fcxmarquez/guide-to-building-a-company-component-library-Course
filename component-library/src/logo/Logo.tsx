@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-interface LogoProps {
+export interface LogoProps {
   srcIcon: string;
 }
 

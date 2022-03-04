@@ -11,7 +11,9 @@ export const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
   ({ isResizable, ...props }, ref) => {
     const id = useContext(FieldContext);
 
-    return <StyledTextArea ref={ref} id={id} isResizable={isResizable} {...props} />;
+    return (
+      <StyledTextArea ref={ref} id={id} isResizable={isResizable} {...props} />
+    );
   }
 );
 

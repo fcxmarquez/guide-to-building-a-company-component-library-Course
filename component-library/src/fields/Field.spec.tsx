@@ -24,8 +24,8 @@ describe('Field', () => {
           <Field.Input />
         </Field>
       );
-      screen.debug()
-      expect(screen.getByLabelText("Input")).toHaveAttribute('id', 'unique-id');
+      screen.debug();
+      expect(screen.getByLabelText('Input')).toHaveAttribute('id', 'unique-id');
     });
   });
 
@@ -37,7 +37,10 @@ describe('Field', () => {
           <Field.TextArea />
         </Field>
       );
-      expect(screen.getByLabelText("TextArea")).toHaveAttribute('id', 'unique-id');
+      expect(screen.getByLabelText('TextArea')).toHaveAttribute(
+        'id',
+        'unique-id'
+      );
     });
   });
 });
